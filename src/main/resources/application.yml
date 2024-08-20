@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  security:
+    user:
+      password: user
+  datasource:
+    url: jdbc:h2:mem:testdb
+  jpa:
+    hibernate:
+      ddl-update: update
+  h2:
+    console:
+      enabled: true
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
